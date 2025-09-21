@@ -8,7 +8,7 @@ const menuData = [
     { name: "Pepperoni Pizza", price: "$8.99", img: "pictures/Pepperoni Pizza.jpg" },
     { name: "Veggie Pizza", price: "$7.99", img: "pictures/Veggie Pizza.jpg" },
     { name: "Dal Chawal", price: "$7.50", img: "pictures/Dal Chawal.jpg" },
-    { name: "Kung Pao Chicken", price: "$9.99", img: "pictures/Kung PAo Chicken.jpg" },
+    { name: "Kung Pao Chicken", price: "$9.99", img: "pictures/Kung Pao Chicken.jpg" },
     { name: "Keema", price: "$4.99", img: "pictures/Keema.jpg" },
     { name: "Sweet and Sour Pork", price: "$10.50", img: "pictures/Sweet and Sour Pork.jpg" },
     { name: "Spring Rolls", price: "$4.00", img: "pictures/Spring Rolls.jpg" },
