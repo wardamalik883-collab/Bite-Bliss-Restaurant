@@ -1,448 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bite & Bliss Restaurant</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bite & Bliss Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="pictures/logo.png" />
+  </head>
+  <body>
     <!--  Navbar -->
     <nav>
-        <div class="navbar">
+      <div class="navbar">
         <!-- Logo + Website Name -->
         <div class="web-name">
-            <a href="index.html" class="brand-link">
-            <img src="pictures/logo.png" alt="Bite & Bliss Restaurant Logo" class="logo">
+          <a href="index.html" class="brand-link">
+            <img
+              src="pictures/logo.png"
+              alt="Bite & Bliss Restaurant Logo"
+              class="logo"
+            />
             <h1>Bite & Bliss Restaurant</h1>
-            </a>
+          </a>
+        </div>
+
+        <!-- Hamburger (mobile) -->
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
 
         <!-- Links + Buttons + Toggle -->
         <div class="nav-links">
-            <ol>
-                <li><a class="a1" href="index.html">Home</a></li>
-                <li><a class="a1" href="menu.html">Menu</a></li>
-                <li><a class="a1" href="about.html">About Us</a></li>
-                <li><a class="a1" href="contact.html">Contact</a></li>
-               <li class="auth-buttons">
-                    <a href="login.html"><button class="login-btn">Login</button></a>
-                    <a href="signup.html"><button class="signup-btn">Signup</button></a>
-                </li>
-                <li class="theme-toggle">
-                    <label class="theme-switch">
-                        <input type="checkbox" id="theme-toggle">
-                        <span class="slider"></span>
-                    </label>
-                </li>
-            </ol>
-        </div>
+          <ol id="nav-list">
+            <li><a class="a1" href="index.html">Home</a></li>
+            <li><a class="a1" href="menu.html">Menu</a></li>
+            <li><a class="a1" href="about.html">About Us</a></li>
+            <li><a class="a1" href="contact.html">Contact</a></li>
+            <li class="auth-buttons">
+              <a href="AccountAccess.html"><button class="login-btn">Account Access</button></a>
+            </li>
+          </ol>
 
+          <div class="theme-toggle">
+            <label class="theme-switch">
+              <input type="checkbox" id="theme-toggle" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
     </nav>
-  <!--  Navbar End -->
 
+    <!--  Navbar End -->
+    <main>
+      <section class="menu-container" id="menu"></section>
+    </main>
 
-    <!-- Cards -->
-
-    <!-- Fast Food -->
-
-    <div class="food-cards">
-        <div class="items">
-            <div class="item-name">Fast Food</div>
-            <div class="horizontal-line"></div>
-        </div>
-        <div class="wrapper">
-
-            <!-- card 1 -->
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page">
-                    <div class="card-info">
-                        <h2 class="card-title">Pizza</h2>
-                        <p class="card-subtitle">
-                            Delicious, cheesy, and loaded with fresh toppings — every slice of our pizza is a bite of happiness!
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>Pizza</h3>
-                        <p class="card-description">
-                            Our pizzas are crafted with love, using the finest fresh ingredients and authentic recipes. Each pizza features a perfectly baked crust, rich tomato sauce, gooey melted cheese, and a variety of delicious toppings. Whether you love classic Margherita, spicy Pepperoni, or gourmet specialty pizzas, every bite delivers a burst of flavor that will leave you craving more.
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!-- card 2 -->
-
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page">
-                    <div class="card-info">
-                        <h2 class="card-title">Zinger Burger</h2>
-                        <p class="card-subtitle">
-                            Spicy, flavorful chicken layered with crunchy vegetables.
-                            A Zinger Burger that’s irresistible in every bite!
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>Zinger Burger</h3>
-                        <p class="card-description">
-                            Savor the perfect blend of crispy, juicy chicken and fresh, crunchy vegetables with our signature Zinger Burger. Each bite delivers a burst of flavor, layered with creamy sauces and nestled in a soft, toasted bun. Whether you're craving a quick snack or a satisfying meal, our Zinger Burger promises a delightful experience that keeps you coming back for more. Perfectly spiced and crafted with care, it’s the ultimate treat for burger lovers!                        
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!-- card 3 -->
-
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page">
-                    <div class="card-info">
-                        <h2 class="card-title">chicken Swarma</h2>
-                        <p class="card-subtitle">
-                            Juicy, spiced chicken paired with crisp vegetables and savory sauces.
-                            Our Chicken Shawarma delivers a delicious bite every time!
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>chicken Swarma</h3>
-                        <p class="card-description">
-                            Experience the rich flavors of our Chicken Shawarma, made with tender, marinated chicken cooked to perfection. Wrapped in soft, warm flatbread and paired with fresh vegetables and savory sauces, every bite is a delicious combination of spice and zest. Perfect as a quick snack or a satisfying meal, our Chicken Shawarma is a treat that keeps you coming back for more. 
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!-- card 4 -->
-
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page">
-                    <div class="card-info">
-                        <h2 class="card-title">Chicken Nuggets</h2>
-                        <p class="card-subtitle">
-                           Golden, crispy chicken nuggets with a tender, juicy inside.
-                            Served with your favorite dipping sauces for a perfect bite every time.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>Chicken Nuggets</h3>
-                        <p class="card-description">
-                            Bite-sized, golden-fried chicken nuggets that are crispy on the outside and tender on the inside. Perfectly seasoned and served with your favorite dipping sauces, they make an irresistible snack or a fun meal for all ages. Crispy, flavorful, and easy to enjoy, our Chicken Nuggets are a favorite for everyone! 
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-        </div>
-        
-    </div>
-
-    <!-- Desi Food -->
-    
-    <div class="food-cards">
-        <div class="wrapper">
-
-            <!-- card 1 -->
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page-1">
-                    <div class="card-info">
-                        <h2 class="card-title">Biryani</h2>
-                        <p class="card-subtitle">
-                            Savor the perfect blend of spices, meat, and fragrant rice.
-                            A delicious Biryani that’s hearty, flavorful, and unforgettable.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>Biryani</h3>
-                        <p class="card-description">
-                            Indulge in the rich aroma and flavors of our authentic Biryani, made with tender, marinated meat and fragrant basmati rice. Cooked with a blend of traditional spices and garnished with fresh herbs, every bite is a perfect harmony of taste and texture. Whether you’re enjoying it as a hearty meal or a special treat, our Biryani promises a delicious experience that delights every food lover. 
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!-- card 2 -->
-
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page-1">
-                    <div class="card-info">
-                        <h2 class="card-title">Nihari</h2>
-                        <p class="card-subtitle">
-                           Savor the authentic taste of slow-cooked Nihari, rich and aromatic.
-                            Every spoonful is a hearty, flavorful experience you won’t forget.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>Nihari</h3>
-                        <p class="card-description">
-                             Experience the slow-cooked perfection of our Nihari,
-                            where tender meat melts in a rich, flavorful gravy
-                            infused with traditional spices and garnished with fresh herbs and ginger.
-                            Every spoonful is a comforting, hearty delight that brings the authentic taste of this classic dish to your table.
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!-- card 3 -->
-
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page-1">
-                    <div class="card-info">
-                        <h2 class="card-title">chicken Karahi</h2>
-                        <p class="card-subtitle">
-                            Savor the bold, traditional flavors of our sizzling Chicken Karahi.
-                            A perfect blend of spices and tender chicken in every bite.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>chicken Karahi </h3>
-                        <p class="card-description">
-                            Delight in the bold flavors of our Chicken Karahi,
-                            cooked with tender chicken, fresh tomatoes, green chilies,
-                            and a perfect blend of traditional spices.
-                            Served sizzling hot, this classic dish offers a rich, aromatic experience that captures the authentic taste of homemade Pakistani cuisine. 
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!-- card 4 -->
-
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page-1">
-                    <div class="card-info">
-                        <h2 class="card-title">Mutton Karahi</h2>
-                        <p class="card-subtitle">
-                            Savor the rich, traditional flavors of our sizzling Mutton Karahi.
-                            Every bite delivers tender meat and a perfect blend of spices.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>Mutton Karahi</h3>
-                        <p class="card-description">
-                            Savor the rich and hearty flavors of our Mutton Karahi, cooked with tender mutton, fresh tomatoes, green chilies, and a perfect blend of traditional spices. Served sizzling hot, this classic dish is full of aroma and taste, bringing the authentic essence of homemade Pakistani cuisine to your plate.                            
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-        </div>
-        
-    </div>
-
-    <!-- chines Food -->
-
-    <div class="food-cards">
-        <div class="wrapper">
-
-            <!-- card 1 -->
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page-2">
-                    <div class="card-info">
-                        <h2 class="card-title">Chicken Chowmein</h2>
-                        <p class="card-subtitle">
-                           Savor the perfect blend of chicken, veggies, and noodles in every bite.
-                            A classic Chicken Chowmein that’s quick, delicious, and irresistible.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>Chicken Chowmein</h3>
-                        <p class="card-description">
-                            Enjoy our delicious Chicken Chowmein, made with tender chicken, fresh vegetables, and perfectly stir-fried noodles tossed in savory sauces. Bursting with flavor in every bite, this classic Chinese dish is a quick, satisfying, and irresistible treat for all noodle lovers.                        
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!-- card 2 -->
-
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page-2">
-                    <div class="card-info">
-                        <h2 class="card-title">Pasta</h2>
-                        <p class="card-subtitle">
-                           Savor the rich flavors of fresh pasta with herbs and cheese.
-                            A classic dish that’s hearty, creamy, and irresistible.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>pasta</h3>
-                        <p class="card-description">
-                            Indulge in our creamy and flavorful Pasta, made with perfectly cooked noodles and fresh ingredients. Tossed in rich sauces and garnished with herbs and cheese, every bite is a delicious journey that satisfies both your taste buds and cravings.
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!-- card 3 -->
-
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page-2">
-                    <div class="card-info">
-                        <h2 class="card-title">Chicken Dumplings</h2>
-                        <p class="card-subtitle">
-                           Savor perfectly cooked Chicken Dumplings with juicy, seasoned filling.
-                            A delicious snack or appetizer that’s irresistible every time.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>chicken Dumplings</h3>
-                        <p class="card-description">
-                            Enjoy our tender Chicken Dumplings, filled with seasoned chicken and fresh vegetables, wrapped in soft, delicate dough. Steamed or pan-fried to perfection, each bite bursts with flavor, making them a delightful snack or appetizer for every food lover.
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-            <!-- card 4 -->
-
-            <div class="card">
-                <!-- Front Page -->
-                <div class="front-page-2">
-                    <div class="card-info">
-                        <h2 class="card-title">Honey Chicken</h2>
-                        <p class="card-subtitle">
-                           Savor tender chicken pieces with a perfectly balanced honey flavor.
-                            A delicious treat that delights both kids and adults alike.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Back Page -->
-                <div class="back-page">
-                    <div class="card-content">
-                        <h3>Honey Chicken</h3>
-                        <p class="card-description">
-                            Delight in our crispy Honey Chicken, coated with a sweet and savory honey glaze that perfectly complements tender, juicy chicken pieces. Each bite is a delicious mix of crunch and flavor, making it an irresistible treat for both kids and adults alike.                        
-                        </p>
-                        <button class="card-button">Explore More</button>
-                    </div>
-                </div>
-                
-            </div>
-
-        </div>
-        
-    </div>
+    <script src="menu.js"></script>
 
     <!--  Footer -->
     <div class="footer">
-        <!-- left-div -->
-        <div id="footer-left">
-            <div>
-                <h1 id="heading">Bite & Bliss Restaurant</h1>
-                <p id="p">Bite & Bliss Restaurant is your perfect dining spot, serving delicious flavors and a cozy atmosphere where every meal feels special.</p>
-            </div>
-            <div id="icons">
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icons-gap"></i></a>
-                <a href="https://x.com/"><i class="fab fa-twitter icons-gap"></i></a>
-                <a href="https://www.linkedin.com/home"><i class="fab fa-linkedin-in icons-gap"></i></a>
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram icons-gap"></i></a>
-            </div>
+    <!-- left-div -->
+    <div id="footer-left">
+        <div>
+          <h1 id="heading">Bite & Bliss Restaurant</h1>
+          <p id="p">
+            Bite & Bliss Restaurant is your perfect dining spot, serving
+            delicious flavors and a cozy atmosphere where every meal feels
+            special.
+          </p>
         </div>
-
-        <!-- right-div -->
-        <div id="footer-right">
-            <div>
-                <h2 id="links">Quick Links</h2>
-                <a class="a2" href="index.html">Home</a>
-                <a class="a2" href="menu.html">Menu</a>
-                <a class="a2" href="about.html">About Us</a>
-                <a class="a2" href="contact.html">Contact</a>
-            </div>
-            <div>
-                <h2 id="links">Customer Services</h2>
-                <ol class="footer-links">
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="return.html">Returns</a></li>
-                <li><a href="shipping.html">Shipping info</a></li>
-                </ol>
-            </div>
-        </div>
-
-        <!-- Bottom Line -->
-        <div class="bottom">
-        © 2024/2025 Bite & Bliss Restaurant
+        <div id="icons">
+          <a href="https://www.facebook.com/"
+            ><i class="fab fa-facebook-f icons-gap"></i
+          ></a>
+          <a href="https://x.com/"><i class="fab fa-twitter icons-gap"></i></a>
+          <a href="https://www.linkedin.com/home"
+            ><i class="fab fa-linkedin-in icons-gap"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fab fa-instagram icons-gap"></i
+          ></a>
         </div>
     </div>
+
+    <!-- right-div -->
+    <div id="footer-right">
+        <div>
+          <h2 id="links">Quick Links</h2>
+          <a class="a2" href="index.html">Home</a>
+          <a class="a2" href="menu.html">Menu</a>
+          <a class="a2" href="about.html">About Us</a>
+          <a class="a2" href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h2 id="links">Customer Services</h2>
+          <ol class="footer-links">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="return.html">Returns</a></li>
+            <li><a href="shipping.html">Shipping info</a></li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Bottom Line -->
+      <div class="bottom">© 2024/2025 Bite & Bliss Restaurant</div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

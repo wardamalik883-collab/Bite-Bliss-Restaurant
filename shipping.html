@@ -7,32 +7,83 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="pictures/logo.png">
 </head>
 <body>
-    <!-- navbar -->
-    <nav>
-        <div class="navbar">
-            <div class="web-name">
-                <a href="index.html" class="brand-link">
-                    <img src="pictures/logo.png" alt="Bite & Bliss Restaurant Logo" class="logo">
-                    <h1>Bite & Bliss Restaurant</h1>
-                </a>
-            </div>
+     <!--  Navbar -->
+  <nav>
+  <div class="navbar">
+    <!-- Logo + Website Name -->
+    <div class="web-name">
+      <a href="index.html" class="brand-link">
+        <img src="pictures/logo.png" alt="Bite & Bliss Restaurant Logo" class="logo">
+        <h1>Bite & Bliss Restaurant</h1>
+      </a>
+    </div>
 
-            <div class="nav-links">
-                <ol>
-                    <li><a class="a1" href="index.html">Home</a></li>
-                    <li><a class="a1" href="menu.html">Menu</a></li>
-                    <li><a class="a1" href="about.html">About Us</a></li>
-                    <li><a class="a1" href="contact.html">Contact</a></li>
-                    <li><a href="login.html"><button class="login-btn">Login</button></a></li>
-                    <li><a href="signup.html"><button class="signup-btn">signup</button></a></li>
-                </ol>
-            </div>
+    <!-- Hamburger (mobile) -->
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 
-        </div>
-    </nav>
-    <!-- navbar end here -->
+    <!-- Links + Buttons + Toggle -->
+    <div class="nav-links">
+  <ol id="nav-list">
+    <li><a class="a1" href="index.html">Home</a></li>
+    <li><a class="a1" href="menu.html">Menu</a></li>
+    <li><a class="a1" href="about.html">About Us</a></li>
+    <li><a class="a1" href="contact.html">Contact</a></li>
+    <li class="auth-buttons">
+      <a href="AccountAccess.html"><button class="login-btn">Account Access</button></a>
+    </li>
+  </ol>
+
+ 
+  <div class="theme-toggle">
+    <label class="theme-switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+
+  </div>
+</nav>
+
+  <!--  Navbar End -->
+
+
+  
+  <section class="shipping-section">
+    <h2>🚚 Bite & Bills - Shipping Information</h2>
+    <p class="sub-text">We make sure your delicious food reaches you quickly & safely!</p>
+
+    <div class="shipping-container">
+
+      <div class="ship-card">
+        <h3>📍 Delivery Areas</h3>
+        <p>We deliver across major parts of the city. Please enter your location at checkout to confirm availability.</p>
+      </div>
+
+      <div class="ship-card">
+        <h3>⏱ Delivery Time</h3>
+        <p>Our average delivery time is <b>30–45 minutes</b>. Peak hours may take a little longer.</p>
+      </div>
+
+      <div class="ship-card">
+        <h3>💰 Shipping Charges</h3>
+        <p>Free delivery on orders above PKR 2000. For smaller orders, a small delivery fee applies.</p>
+      </div>
+
+      <div class="ship-card">
+        <h3>❄️ Food Safety</h3>
+        <p>Your meals are packed with care in insulated containers to ensure freshness & hygiene.</p>
+      </div>
+
+    </div>
+  </section>
 
     
         <!-- Footer -->
@@ -86,6 +137,7 @@
 
 
     </div>
+    <script src="script.js"></script>
 
 </body>
 </html>

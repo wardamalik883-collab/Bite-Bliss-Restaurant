@@ -1,91 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bite & Bliss Restraurant</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- navbar -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="pictures/logo.png" />
+  </head>
+  <body>
+    <!--  Navbar -->
     <nav>
-        <div class="navbar">
-            <div class="web-name">
-                <a href="index.html" class="brand-link">
-                    <img src="pictures/logo.png" alt="Bite & Bliss Restaurant Logo" class="logo">
-                    <h1>Bite & Bliss Restaurant</h1>
-                </a>
-            </div>
-
-            <div class="nav-links">
-                <ol>
-                    <li><a class="a1" href="index.html">Home</a></li>
-                    <li><a class="a1" href="menu.html">Menu</a></li>
-                    <li><a class="a1" href="about.html">About Us</a></li>
-                    <li><a class="a1" href="contact.html">Contact</a></li>
-                    <li><a href="login.html"><button class="login-btn">Login</button></a></li>
-                    <li><a href="signup.html"><button class="signup-btn">signup</button></a></li>
-                </ol>
-            </div>
-
+      <div class="navbar">
+        <!-- Logo + Website Name -->
+        <div class="web-name">
+          <a href="index.html" class="brand-link">
+            <img
+              src="pictures/logo.png"
+              alt="Bite & Bliss Restaurant Logo"
+              class="logo"
+            />
+            <h1>Bite & Bliss Restaurant</h1>
+          </a>
         </div>
+
+        <!-- Hamburger (mobile) -->
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- Links + Buttons + Toggle -->
+        <div class="nav-links">
+          <ol id="nav-list">
+            <li><a class="a1" href="index.html">Home</a></li>
+            <li><a class="a1" href="menu.html">Menu</a></li>
+            <li><a class="a1" href="about.html">About Us</a></li>
+            <li><a class="a1" href="contact.html">Contact</a></li>
+            <li class="auth-buttons">
+              <a href="AccountAccess.html"><button class="login-btn">Account Access</button></a>
+            </li>
+          </ol>
+
+          <div class="theme-toggle">
+            <label class="theme-switch">
+              <input type="checkbox" id="theme-toggle" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
     </nav>
-    <!-- navbar end here -->
 
-    
-        <!-- Footer -->
+  <!--  Navbar End -->
+      
+  <!-- HERO SECTION -->
+  <section class="abt-hero">
 
+    <div class="abt-hero-content">
+      <h1>About Bite & Bliss</h1>
+      <p>Where every bite tells a story — fresh, local, and made with love.</p>
+      <a href="#contact" class="abt-btn">Get in Touch</a>
+    </div>
 
-        <div class="footer">
-        <!-- left-div -->
+  </section>
 
-        <div id="footer-left">
-            <div>
-                <h1>Bite & Bliss Restaurant</h1>
+  <!-- INTRO + STATS -->
+  <section class="abt-intro">
 
-                <p id="p">Bite & Bliss Restaurant is your perfect dining spot, serving delicious flavors and a cozy atmosphere where every meal feels special.</p>
+    <div class="abt-text">
 
-            </div>
-              <div id="icons">
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icons-gap"></i></a>
-                <a href="https://x.com/"><i class="fab fa-twitter icons-gap"></i></a>
-                <a href="https://www.linkedin.com/home"><i class="fab fa-linkedin-in icons-gap"></i></a>
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram icons-gap"></i></a>
+      <h2>Our Story</h2>
 
-            </div>
+      <p>Bite & Bliss started as a small neighbourhood idea: create food that comforts and excites at the same time.</p>
 
-        </div>
-        <!-- right-div -->
+      <p>We combine time-tested recipes with seasonal ingredients and a friendly atmosphere that makes every visit feel like coming home.</p>
+    </div>
 
-        <div id="footer-right">
-            <div>
-                <h2 id="links">Quick Links</h2>
-                <a class="a2" href="index.html">Home</a>
-                <a class="a2" href="menu.html">Menu</a>
-                <a class="a2" href="about.html">About Us</a>
-                <a class="a2" href="contact.html">Contact</a>
+    <div class="abt-stats">
 
-            </div>
-            <div>
-                <h2 id="links">Coustomer Services</h2>
-                <ol class="footer-links">
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="return.html">Returns</a></li>
-                    <li><a href="shipping.html">Shipping info</a></li>
-                </ol>
+      <div class="abt-stat">
+        <strong>2500+</strong>
+        <span>Happy Customers</span>
+      </div>
 
-            </div>
+      <div class="abt-stat">
+        <strong>120+</strong>
+        <span>Unique Dishes</span>
+      </div>
 
-        </div>
-        <!-- Bottom Line -->
-        <div class="bottom">
-            © 2024/2025 Bite & Bliss Restraurant 
-        </div>
-
+      <div class="abt-stat">
+        <strong>10</strong>
+        <span>Years of Taste</span>
+      </div>
 
     </div>
 
-</body>
+  </section>
+
+ <section class="abt-mission">
+
+  <h2>Our Mission</h2>
+
+  <ul class="abt-values">
+    <li>
+      <h3>Quality Ingredients</h3>
+      <p>We source the freshest and finest ingredients to ensure every dish delivers exceptional flavor and nutrition.</p>
+    </li>
+
+    <li>
+      <h3>Community Focus</h3>
+      <p>We support local producers and give back to our neighborhood, building meaningful connections through food.</p>
+    </li>
+
+    <li>
+      <h3>Creative Menus</h3>
+      <p>Our menu combines classic recipes with modern twists, creating unique experiences for every diner.</p>
+    </li>
+
+  </ul>
+
+</section>
+
+
+
+  <!-- TEAM -->
+  <section class="abt-team">
+
+    <h2>Meet The Team</h2>
+
+    <div class="abt-team-grid">
+
+      <div class="abt-member">
+
+        <div class="abt-avatar">AB</div>
+
+        <h3>Ali Baig</h3>
+        <p class="abt-role">Head Chef</p>
+        <p class="abt-bio">Ali blends traditional recipes with modern techniques to create our signature flavors.</p>
+
+      </div>
+
+      <div class="abt-member">
+
+        <div class="abt-avatar">WM</div>
+
+        <h3>Warda Malik</h3>
+        <p class="abt-role">Manager</p>
+        <p class="abt-bio">Warda ensures every guest leaves with a smile — hospitality is her superpower.</p>
+
+      </div>
+
+      <div class="abt-member">
+
+        <div class="abt-avatar">SM</div>
+
+        <h3>Sara Mir</h3>
+        <p class="abt-role">Pastry Chef</p>
+        <p class="abt-bio">Sara is the sweet genius behind our desserts and seasonal specials.</p>
+      </div>
+
+    </div>
+    
+  </section>
+
+    
+  <!-- Footer -->
+
+    <div class="footer">
+      <!-- left-div -->
+
+      <div id="footer-left">
+        <div>
+          <h1>Bite & Bliss Restaurant</h1>
+
+          <p id="p">
+            Bite & Bliss Restaurant is your perfect dining spot, serving
+            delicious flavors and a cozy atmosphere where every meal feels
+            special.
+          </p>
+        </div>
+        <div id="icons">
+          <a href="https://www.facebook.com/"
+            ><i class="fab fa-facebook-f icons-gap"></i
+          ></a>
+          <a href="https://x.com/"><i class="fab fa-twitter icons-gap"></i></a>
+          <a href="https://www.linkedin.com/home"
+            ><i class="fab fa-linkedin-in icons-gap"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fab fa-instagram icons-gap"></i
+          ></a>
+        </div>
+      </div>
+      <!-- right-div -->
+
+      <div id="footer-right">
+        <div>
+          <h2 id="links">Quick Links</h2>
+          <a class="a2" href="index.html">Home</a>
+          <a class="a2" href="menu.html">Menu</a>
+          <a class="a2" href="about.html">About Us</a>
+          <a class="a2" href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h2 id="links">Coustomer Services</h2>
+          <ol class="footer-links">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="return.html">Returns</a></li>
+            <li><a href="shipping.html">Shipping info</a></li>
+          </ol>
+        </div>
+      </div>
+      <!-- Bottom Line -->
+      <div class="bottom">© 2024/2025 Bite & Bliss Restraurant</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

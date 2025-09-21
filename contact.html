@@ -1,91 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bite & Bliss Restraurant</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- navbar -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="pictures/logo.png" />
+  </head>
+  <body>
+    <!--  Navbar -->
     <nav>
-        <div class="navbar">
-            <div class="web-name">
-                <a href="index.html" class="brand-link">
-                    <img src="pictures/logo.png" alt="Bite & Bliss Restaurant Logo" class="logo">
-                    <h1>Bite & Bliss Restaurant</h1>
-                </a>
-            </div>
-
-            <div class="nav-links">
-                <ol>
-                    <li><a class="a1" href="index.html">Home</a></li>
-                    <li><a class="a1" href="menu.html">Menu</a></li>
-                    <li><a class="a1" href="about.html">About Us</a></li>
-                    <li><a class="a1" href="contact.html">Contact</a></li>
-                    <li><a href="login.html"><button class="login-btn">Login</button></a></li>
-                    <li><a href="signup.html"><button class="signup-btn">signup</button></a></li>
-                </ol>
-            </div>
-
+      <div class="navbar">
+        <!-- Logo + Website Name -->
+        <div class="web-name">
+          <a href="index.html" class="brand-link">
+            <img
+              src="pictures/logo.png"
+              alt="Bite & Bliss Restaurant Logo"
+              class="logo"
+            />
+            <h1>Bite & Bliss Restaurant</h1>
+          </a>
         </div>
+
+        <!-- Hamburger (mobile) -->
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- Links + Buttons + Toggle -->
+        <div class="nav-links">
+          <ol id="nav-list">
+            <li><a class="a1" href="index.html">Home</a></li>
+            <li><a class="a1" href="menu.html">Menu</a></li>
+            <li><a class="a1" href="about.html">About Us</a></li>
+            <li><a class="a1" href="contact.html">Contact</a></li>
+            <li class="auth-buttons">
+              <a href="AccountAccess.html"
+                ><button class="login-btn">Account Access</button></a
+              >
+            </li>
+          </ol>
+
+          <div class="theme-toggle">
+            <label class="theme-switch">
+              <input type="checkbox" id="theme-toggle" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
     </nav>
-    <!-- navbar end here -->
 
+    <!--  Navbar End -->
+           
+     <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p class="sub-text">We’d love to hear from you! Fill out the form below or reach us directly.</p>
     
-        <!-- Footer -->
+    <div class="contact-container">
 
-
-        <div class="footer">
-        <!-- left-div -->
-
-        <div id="footer-left">
-            <div>
-                <h1>Bite & Bliss Restaurant</h1>
-
-                <p id="p">Bite & Bliss Restaurant is your perfect dining spot, serving delicious flavors and a cozy atmosphere where every meal feels special.</p>
-
-            </div>
-              <div id="icons">
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icons-gap"></i></a>
-                <a href="https://x.com/"><i class="fab fa-twitter icons-gap"></i></a>
-                <a href="https://www.linkedin.com/home"><i class="fab fa-linkedin-in icons-gap"></i></a>
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram icons-gap"></i></a>
-
-            </div>
-
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="info-box">
+          <h3>Email</h3>
+          <p>wardamalik883@gmail.com</p>
         </div>
-        <!-- right-div -->
-
-        <div id="footer-right">
-            <div>
-                <h2 id="links">Quick Links</h2>
-                <a class="a2" href="index.html">Home</a>
-                <a class="a2" href="menu.html">Menu</a>
-                <a class="a2" href="about.html">About Us</a>
-                <a class="a2" href="contact.html">Contact</a>
-
-            </div>
-            <div>
-                <h2 id="links">Coustomer Services</h2>
-                <ol class="footer-links">
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="return.html">Returns</a></li>
-                    <li><a href="shipping.html">Shipping info</a></li>
-                </ol>
-
-            </div>
-
+        <div class="info-box">
+          <h3>Phone</h3>
+          <p>+92 300 1234567</p>
         </div>
-        <!-- Bottom Line -->
-        <div class="bottom">
-            © 2024/2025 Bite & Bliss Restraurant 
+        <div class="info-box">
+          <h3>Address</h3>
+          <p>Karachi, Pakistan</p>
         </div>
+      </div>
 
+      <!-- Contact Form -->
+      <form  action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="ed3f6991-7a89-4af6-a847-38029fa75a89">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
 
     </div>
+  </section>
 
-</body>
+    <!-- Footer -->
+
+    <div class="footer">
+      <!-- left-div -->
+
+      <div id="footer-left">
+        <div>
+          <h1>Bite & Bliss Restaurant</h1>
+
+          <p id="p">
+            Bite & Bliss Restaurant is your perfect dining spot, serving
+            delicious flavors and a cozy atmosphere where every meal feels
+            special.
+          </p>
+        </div>
+        <div id="icons">
+          <a href="https://www.facebook.com/"
+            ><i class="fab fa-facebook-f icons-gap"></i
+          ></a>
+          <a href="https://x.com/"><i class="fab fa-twitter icons-gap"></i></a>
+          <a href="https://www.linkedin.com/home"
+            ><i class="fab fa-linkedin-in icons-gap"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fab fa-instagram icons-gap"></i
+          ></a>
+        </div>
+      </div>
+      <!-- right-div -->
+
+      <div id="footer-right">
+        <div>
+          <h2 id="links">Quick Links</h2>
+          <a class="a2" href="index.html">Home</a>
+          <a class="a2" href="menu.html">Menu</a>
+          <a class="a2" href="about.html">About Us</a>
+          <a class="a2" href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h2 id="links">Coustomer Services</h2>
+          <ol class="footer-links">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="return.html">Returns</a></li>
+            <li><a href="shipping.html">Shipping info</a></li>
+          </ol>
+        </div>
+      </div>
+      <!-- Bottom Line -->
+      <div class="bottom">© 2024/2025 Bite & Bliss Restraurant</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
