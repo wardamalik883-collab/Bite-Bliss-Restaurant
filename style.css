@@ -390,7 +390,7 @@ input:checked + .slider:before {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   margin-top: 20px;
 }
 
@@ -405,8 +405,6 @@ input:checked + .slider:before {
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2), -5px -5px 10px rgba(0,0,0,0.05);
   position: relative;
 }
-
-
 
 .card:hover {
   transform: rotateY(180deg);
@@ -634,7 +632,6 @@ input:checked + .slider:before {
 }
 
 /* ----------About Page ------------- */
-
 
 a {
   text-decoration: none;
@@ -868,7 +865,7 @@ a {
 
 /* ---------- MAIN CONTENT ---------- */
 main {
-  margin-top: 40px;
+  margin-top: 80px;
   min-height: 100vh;
   padding: 20px;
 }
@@ -1820,6 +1817,13 @@ form button {
   }
 }
 
+@media (max-width: 1024px) and (min-width: 768px) {
+  .wrapper {
+    justify-content: center;
+  }
 
-
-
+  .card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 400px;
+  }
+}
